@@ -6,9 +6,14 @@ header {
   background-color: gray;
 }
 
+nav ul {
+  display: flex;
+}
+
 header ul li {
   list-style: none;
   padding: 5px;
+  margin-right: 10px;
 }
 
 header ul li a {
@@ -24,6 +29,12 @@ main section {
   margin-bottom: 30px;
 }
 
+.contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 footer {
   background-color: lightgray;
+  padding: 40px 0 20px 30px;
 }
