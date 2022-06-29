@@ -27,3 +27,21 @@ div > p {
 div > p:hover {
   background-color: green;
 }
+
+.box {
+  background-color: purple;
+  width: 200px;
+  height: 200px;
+}
+
+#box1 {
+  padding: 50px;
+}
+
+#box2 {
+  margin: 0;
+}
+
+#box3 {
+  margin: 50px;
+}

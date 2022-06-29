@@ -1,0 +1,29 @@
+body {
+  font-family: "Elice Digital Baeum",sans-serif;
+}
+
+header {
+  background-color: gray;
+}
+
+header ul li {
+  list-style: none;
+  padding: 5px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  padding: 10px 30px;
+}
+
+main section {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: lightgray;
+}
