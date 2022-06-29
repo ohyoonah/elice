@@ -1,0 +1,29 @@
+body {
+  margin-left: 100px;
+}
+
+h1, h3 {
+  color: red;
+}
+
+p.p b {
+  background-color: black;
+  color: white;
+}
+
+#internet,
+#browser {
+  border: 1px solid black;
+}
+
+input[type="button"] {
+  border: 1px solid blue;
+}
+
+div > p {
+  border: 1px solid green;
+}
+
+div > p:hover {
+  background-color: green;
+}
