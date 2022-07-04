@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>함수</h1>
+    <script>
+      function printText(text) {
+        document.write(text);
+        document.write("<br/>");
+        return "함수가 반환해주는 값";
+      }
+      // printText("매개변수에 값 넘겨주기");
+      document.write(printText("매개변수에 값 넘겨주기"));
+
+      let returnSomething = function () {
+        return 123;
+      };
+
+      document.write("<br/>" + returnSomething());
+    </script>
+  </body>
+</html>
