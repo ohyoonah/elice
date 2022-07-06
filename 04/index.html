@@ -28,19 +28,55 @@
         aliquam! Ipsum.
       </span>
     </p>
+
+    <!-- 내가 짠 코드
     <input
       type="button"
       value="night"
+      id="night"
       onclick="document.querySelector('body').style.backgroundColor = 'black';
       document.querySelector('body').style.color = 'white';
-      document.querySelector('p').style.borderColor = 'white';"
+      document.querySelector('p').style.borderColor = 'white';
+      this.style.display='none';
+      document.querySelector('#day').style.display = 'inline';"
     />
     <input
+      style="display: none"
       type="button"
       value="day"
+      id="day"
       onclick="document.querySelector('body').style.backgroundColor = 'white';
       document.querySelector('body').style.color = 'black';
-      document.querySelector('p').style.borderColor = 'black';"
+      document.querySelector('p').style.borderColor = 'black';
+      document.querySelector('#night').style.display = 'inline';
+      this.style.display='none';"
+    /> -->
+
+    <!-- 강의 코드 -->
+    <input
+      type="button"
+      value="night"
+      onclick="
+        if (this.value === 'night') {
+          document.querySelector('body').style.backgroundColor = 'black';
+          document.querySelector('body').style.color = 'white';
+          // document.querySelector('p').style.borderColor = 'white';
+          let nightElements =  document.querySelectorAll('p');
+          for (let i = 0; i < nightElements.length; i++) {
+            nightElements[i].style.borderColor = 'white';
+          }
+          this.value = 'day';
+        } else if (this.value == 'day') {
+          document.querySelector('body').style.backgroundColor = 'white';
+          document.querySelector('body').style.color = 'black';
+          // document.querySelector('p').style.borderColor = 'black';
+          let dayElements =  document.querySelectorAll('p');
+          for (let i = 0; i < dayElements.length; i++) {
+            dayElements[i].style.borderColor = 'black';
+          }
+          this.value = 'night';
+        }
+    "
     />
   </body>
 </html>
