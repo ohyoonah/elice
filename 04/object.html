@@ -1,0 +1,21 @@
+<h2>객체</h2>
+<script>
+  let animal = {
+    camel: "🐪",
+    rabbit: "🐇",
+    snake: "🐍",
+    crying: function () {
+      document.write("멍멍");
+    },
+  };
+
+  document.write(animal);
+  document.write("<br>");
+  document.write(animal.camel);
+  document.write("<br>");
+  document.write(animal["camel"]);
+  document.write("<br>");
+  document.write(JSON.stringify(animal));
+  document.write("<br>");
+  animal.crying();
+</script>
