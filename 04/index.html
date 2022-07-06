@@ -10,10 +10,23 @@
     <h1>자바스크립트</h1>
     <p style="border: 1px black solid" id="javascript-explain">
       Javascript is<span
-        onclick="
-      document.querySelector('#javascript-explain').innerHTML = 'Javascript is Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi pariatur, officiis aperiam labore aliquid suscipit, molestias fuga numquam, magnam ea dolores quaerat asperiores est tempora optio nulla aliquam! Ipsum.'"
+        style="
+          background-color: rgb(170, 170, 170);
+          margin-left: 5px;
+          cursor: pointer;
+          padding: 0 5px;
+        "
+        onclick="this.style.display = 'none';
+        document.querySelector('#p-explain').style.display = 'inline';
+      // document.querySelector('#javascript-explain').innerHTML = 'Javascript is Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi pariatur, officiis aperiam labore aliquid suscipit, molestias fuga numquam, magnam ea dolores quaerat asperiores est tempora optio nulla aliquam! Ipsum.'"
         >...</span
       >
+      <span id="p-explain" style="display: none">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi
+        pariatur, officiis aperiam labore aliquid suscipit, molestias fuga
+        numquam, magnam ea dolores quaerat asperiores est tempora optio nulla
+        aliquam! Ipsum.
+      </span>
     </p>
     <input
       type="button"
