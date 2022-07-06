@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var scores = {
+        kor: 55,
+        mat: 75,
+        eng: 50,
+      };
+
+      function isPass() {
+        let sum = 0;
+        for (let subject in scores) {
+          const score = scores[subject];
+          if (score < 40) return "fail";
+          sum += score;
+        }
+        //Object.keys() --> 객체를 배열로 변환! --> ["ko", "mat", "eng"]
+        if (sum / Object.keys(scores).length < 60) return "fail";
+        return "pass";
+      }
+
+      document.write(isPass());
+      document.write("<br>");
+    </script>
+
+    <script>
+      const students = [
+        {
+          name: "john",
+          studentId: 2020123456,
+          major: "business",
+        },
+        {
+          name: "elice",
+          studentId: 2015111111,
+          major: "statistics",
+        },
+        {
+          name: "jennifer",
+          studentId: 2017000000,
+          major: "visual design",
+        },
+      ];
+
+      // 1.
+      // for (let student of students) {
+      //   if (student.name === "elice") {
+      //     student.major = "computer science";
+      //   }
+      //   document.write(`${student.name}'s major: ${student.major}`);
+      //   document.write("<br>");
+      // }
+
+      // 2.
+      // students.forEach((student) => {
+      //   if (student.name === "elice") {
+      //     student.major = "computer science";
+      //   }
+      //   document.write(`${student.name}'s major: ${student.major}`);
+      //   document.write("<br>");
+      // });
+
+      //3.
+      let result = students.map((value) => {
+        if (value.name === "elice") {
+          return "computer science";
+        }
+        return value.major;
+      });
+      students.forEach((student, index) =>
+        document.write(`${student.name}'s major: ${result[index]} <br>`)
+      );
+    </script>
+  </body>
+</html>
