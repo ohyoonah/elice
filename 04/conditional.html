@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>조건문</h2>
+    <script>
+      // if (0) {
+      //   document.write("0은 참입니다.");
+      //   dcument.write("<br>");
+      // }
+      // if (1) {
+      //   document.write("1은 참입니다.");
+      //   dcument.write("<br>");
+      // }
+      // if (123) {
+      //   document.write("123은 참입니다.");
+      //   dcument.write("<br>");
+      // }
+
+      // let threeOperator = 33;
+      // document.write(
+      //   threeOperator === 33
+      //     ? "삼항 연산자의 조건이 참인 경우"
+      //     : "삼항 연산자의 조건이 거짓인 경우"
+      // );
+      // dcument.write("<br>");
+
+      let flag = 2;
+      if (flag === 1) {
+        document.write("1입니다.");
+      } else if (flag === 2) {
+        document.write("2입니다.");
+      } else {
+        document.write("1도 2도 아닙니다.");
+      }
+      document.write("<br>");
+
+      let visitCount = 5;
+      let memberLevel = "";
+
+      if (visitCount >= 100) {
+        memberLevel = "gold";
+      } else if (visitCount >= 30) {
+        memberLevel = "silver";
+      } else {
+        memberLevel = "bronze";
+      }
+
+      document.write(memberLevel);
+      document.write("<br>");
+
+      let number = parseInt(prompt("숫자를 입력: "));
+      if (number == 1) {
+        document.write("1입니다.");
+      } else if (number == 2) {
+        document.write("2입니다.");
+      } else {
+        document.write("1도 2도 아닙니다.");
+      }
+      dcument.write("<br>");
+    </script>
+  </body>
+</html>
