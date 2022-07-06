@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>반복문</h2>
+    <script>
+      for (let i = 0; i < 10; i++) {
+        document.write(i);
+      }
+      document.write("<br>");
+
+      let count = 0;
+      while (count < 10) {
+        document.write(count);
+        count += 1;
+      }
+      document.write("<br>");
+
+      //디버그
+      for (let i = 0; i < 10; i++) {
+        // debugger;
+        console.log(i);
+        document.write(i);
+      }
+      document.write("<br>");
+
+      let animals = ["🐍", "🐇", "🐪"];
+      animals.push("🐺");
+      for (let i = 0; i < animals.length; i++) {
+        document.write(animals[i]);
+      }
+      document.write("<br>");
+
+      do {
+        document.write("do while문 실행!");
+      } while (false);
+      //do ~ while 문은 조건이 false라도 한 번은 무조건 실행
+      //참인 경우에는 블록을 다시 실행하고 거짓인 경우에는 종료
+    </script>
+
+    <li>낙타</li>
+    <li>토끼</li>
+    <li>뱀</li>
+    <br />
+    <script>
+      let animals2 = ["낙타", "토끼", "뱀"];
+      for (let i = 0; i < animals2.length; i++) {
+        document.write("<li>" + animals2[i] + "</li>");
+      }
+    </script>
+  </body>
+</html>
