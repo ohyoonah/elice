@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>자바스크립트</h1>
+    <p style="border: 1px black solid" id="javascript-explain">
+      Javascript is<span
+        onclick="
+      document.querySelector('#javascript-explain').innerHTML = 'Javascript is Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi pariatur, officiis aperiam labore aliquid suscipit, molestias fuga numquam, magnam ea dolores quaerat asperiores est tempora optio nulla aliquam! Ipsum.'"
+        >...</span
+      >
+    </p>
+    <input
+      type="button"
+      value="night"
+      onclick="document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      document.querySelector('p').style.borderColor = 'white';"
+    />
+    <input
+      type="button"
+      value="day"
+      onclick="document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('p').style.borderColor = 'black';"
+    />
+  </body>
+</html>
