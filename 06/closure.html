@@ -1,0 +1,17 @@
+<!-- closure: 자식 함수에서 부모 함수의 변수에 접근할 수 있다 -->
+<script>
+  let a = "a";
+
+  function A() {
+    function B() {
+      let c = "c";
+      console.log(a, b, c);
+    }
+
+    let b = "b";
+    console.log(a, b); //a, b
+    B();
+  }
+
+  A();
+</script>
