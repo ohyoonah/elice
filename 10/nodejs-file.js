@@ -1,8 +1,6 @@
 // const content1 = fs.readFileSync('readme.txt');
 // const content2 = fs.readFileSync('readme.txt', {encoding: 'utf-8'});
 
-const { rejects } = require("assert");
-
 // console.log(content1);
 // console.log(content2);
 
